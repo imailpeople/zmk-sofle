@@ -152,7 +152,7 @@
         Sticky_Num: wcpn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(PERIOD) &sl 0>;
+            bindings = <&kp LC(PERIOD) &sl 3>;
             label = "WCPN";
             wait-ms = <100>;
         };
