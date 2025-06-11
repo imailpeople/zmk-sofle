@@ -142,8 +142,9 @@
 
         Combo_Ctrl_Period {
             bindings = <&Sticky_Num>;
-            key-positions = <28 39>;
+            key-positions = <39 49>;
             timeout-ms = <200>;
+            layers = <0 1>;
         };
     };
 
