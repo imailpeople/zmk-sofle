@@ -140,7 +140,6 @@
         Combo_Ctrl_Period {
             bindings = <&Sticky_Num>;
             key-positions = <28 39>;
-            layers = <1>;
             timeout-ms = <200>;
         };
     };
@@ -172,16 +171,16 @@
         };
 
         layer_1 {
+            display-name = "QWERTY";
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp GRAVE       &kp N1      &kp N2     &kp N3             &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp EQUAL
+&mo_Tab_F1 5 0  &kp Q       &kp W      &kp E              &kp R                   &kp T                 &kp DOWN_ARROW   &kp Y              &kp U      &kp I      &kp O              &kp P       &kp BACKSPACE
+&kp LSHIFT      &kp A       &kp S      &kp D              &kp F                   &kp G                 &kp LEFT         &kp H              &kp J      &kp K      &kp L              &kp SEMI    &kp SQT
+&kp LCTRL       &kp Z       &kp X      &kp C              &kp V                   &kp B                 &kp RIGHT_ARROW  &kp N              &kp M      &kp COMMA  &kp DOT            &kp FSLH    &kp BSLH
+&kp C_MUTE      &kp ESCAPE  &kp SPACE  &Sh_Del_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 3 0  &kp SPACE  &lt 5 F14  &lt 4 PRINTSCREEN  &kp DELETE
             >;
 
-            display-name = "QWERTY";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_2 {
@@ -200,11 +199,11 @@
         layer_3 {
             display-name = "NumSym";
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp GRAVE       &kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5               &mmv MOVE_UP     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0       &kp EQUAL
+&mo_Tab_F1 5 0  &kp LS(NUMBER_1)  &kp LS(MINUS)  &kp LS(EQUAL)         &kp EQUAL              &mkp MB4                   &mmv MOVE_DOWN   &none         &none         &none         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp BACKSPACE
+&kp LEFT_SHIFT  &kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5               &mmv MOVE_LEFT   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0       &kp SQT
+&kp LCTRL       &kp GRAVE         &none          &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSPACE)          &mmv MOVE_RIGHT  &kp DELETE    &kp MINUS     &kp COMMA     &kp PERIOD         &kp SLASH          &kp BACKSLASH
+&kp C_MUTE      &kp ESCAPE        &kp SPACE      &mt LEFT_ALT MINUS    &mt LEFT_SHIFT ESCAPE  &mt LEFT_META BACKSLASH    &mkp LCLK        &none         &kp SPACE     &kp F14       &lt 4 PRINTSCREEN  &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
