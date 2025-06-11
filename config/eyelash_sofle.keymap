@@ -68,10 +68,10 @@
         mods = <(MOD_LSFT)>;
     };
 
-    Sh_Del_Else_LAlt: Sh_Del_Else_LAlt {
+    Sh_ShDel_Else_LAlt: Sh_ShDel_Else_LAlt {
         compatible = "zmk,behavior-mod-morph";
-        label = "SH_DEL_ELSE_LALT";
-        bindings = <&mt LEFT_ALT MINUS>, <&kp DELETE>;
+        label = "SH_SHDEL_ELSE_LALT";
+        bindings = <&mt LEFT_ALT MINUS>, <&kp LS(DELETE)>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT)>;
@@ -163,11 +163,11 @@
 
         layer_0 {
             bindings = <
-&kp GRAVE       &kp N1      &kp N2     &kp N3             &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp EQUAL
-&mo_Tab_F1 5 0  &kp Q       &kp W      &kp F              &kp P                   &kp G                 &kp DOWN_ARROW   &kp J              &kp L      &kp U      &kp Y              &kp SEMI    &kp BACKSPACE
-&kp LSHIFT      &kp A       &kp R      &kp S              &kp T                   &kp D                 &kp LEFT_ARROW   &kp H              &kp N      &kp E      &kp I              &kp O       &kp SQT
-&kp LCTRL       &kp Z       &kp X      &kp C              &kp V                   &kp B                 &kp RIGHT_ARROW  &kp K              &kp M      &kp COMMA  &kp DOT            &kp FSLH    &kp BSLH
-&kp C_MUTE      &kp ESCAPE  &kp SPACE  &Sh_Del_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 3 0  &kp SPACE  &lt 5 F14  &lt 4 PRINTSCREEN  &kp DELETE
+&kp GRAVE       &kp N1      &kp N2     &kp N3               &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp BACKSPACE
+&mo_Tab_F1 5 0  &kp Q       &kp W      &kp F                &kp P                   &kp G                 &kp DOWN_ARROW   &kp J              &kp L      &kp U      &kp Y              &kp SEMI    &kp DELETE
+&kp LSHIFT      &kp A       &kp R      &kp S                &kp T                   &kp D                 &kp LEFT_ARROW   &kp H              &kp N      &kp E      &kp I              &kp O       &kp SQT
+&kp LCTRL       &kp Z       &kp X      &kp C                &kp V                   &kp B                 &kp RIGHT_ARROW  &kp K              &kp M      &kp COMMA  &kp DOT            &kp FSLH    &kp BSLH
+&kp C_MUTE      &kp ESCAPE  &kp SPACE  &Sh_ShDel_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 3 0  &kp SPACE  &lt 5 F14  &lt 4 PRINTSCREEN  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -177,11 +177,11 @@
         layer_1 {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE       &kp N1      &kp N2     &kp N3             &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp EQUAL
-&mo_Tab_F1 5 0  &kp Q       &kp W      &kp E              &kp R                   &kp T                 &kp DOWN_ARROW   &kp Y              &kp U      &kp I      &kp O              &kp P       &kp BACKSPACE
-&kp LSHIFT      &kp A       &kp S      &kp D              &kp F                   &kp G                 &kp LEFT         &kp H              &kp J      &kp K      &kp L              &kp SEMI    &kp SQT
-&kp LCTRL       &kp Z       &kp X      &kp C              &kp V                   &kp B                 &kp RIGHT_ARROW  &kp N              &kp M      &kp COMMA  &kp DOT            &kp FSLH    &kp BSLH
-&kp C_MUTE      &kp ESCAPE  &kp SPACE  &Sh_Del_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 3 0  &kp SPACE  &lt 5 F14  &lt 4 PRINTSCREEN  &kp DELETE
+&kp GRAVE       &kp N1      &kp N2     &kp N3               &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp BACKSPACE
+&mo_Tab_F1 5 0  &kp Q       &kp W      &kp E                &kp R                   &kp T                 &kp DOWN_ARROW   &kp Y              &kp U      &kp I      &kp O              &kp P       &kp DELETE
+&kp LSHIFT      &kp A       &kp S      &kp D                &kp F                   &kp G                 &kp LEFT         &kp H              &kp J      &kp K      &kp L              &kp SEMI    &kp SQT
+&kp LCTRL       &kp Z       &kp X      &kp C                &kp V                   &kp B                 &kp RIGHT_ARROW  &kp N              &kp M      &kp COMMA  &kp DOT            &kp FSLH    &kp BSLH
+&kp C_MUTE      &kp ESCAPE  &kp SPACE  &Sh_ShDel_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 3 0  &kp SPACE  &lt 5 F14  &lt 4 PRINTSCREEN  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -203,8 +203,8 @@
         layer_3 {
             display-name = "NumSym";
             bindings = <
-&kp GRAVE       &kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5               &mmv MOVE_UP     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0       &kp EQUAL
-&mo_Tab_F1 5 0  &kp LS(NUMBER_1)  &kp LS(MINUS)  &kp LS(EQUAL)         &kp EQUAL              &mkp MB4                   &mmv MOVE_DOWN   &none         &none         &none         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp BACKSPACE
+&kp GRAVE       &kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5               &mmv MOVE_UP     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0       &kp BACKSPACE
+&mo_Tab_F1 5 0  &kp LS(NUMBER_1)  &kp LS(MINUS)  &kp LS(EQUAL)         &kp EQUAL              &mkp MB4                   &mmv MOVE_DOWN   &none         &none         &none         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp DELETE
 &kp LEFT_SHIFT  &kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5               &mmv MOVE_LEFT   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0       &kp SQT
 &kp LCTRL       &kp GRAVE         &none          &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSPACE)          &mmv MOVE_RIGHT  &kp DELETE    &kp MINUS     &kp COMMA     &kp PERIOD         &kp SLASH          &kp BACKSLASH
 &kp C_MUTE      &kp ESCAPE        &kp SPACE      &mt LEFT_ALT MINUS    &mt LEFT_SHIFT ESCAPE  &mt LEFT_META BACKSLASH    &mkp LCLK        &none         &kp SPACE     &kp F14       &lt 4 PRINTSCREEN  &kp DELETE
