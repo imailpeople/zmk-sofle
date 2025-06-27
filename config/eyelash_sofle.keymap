@@ -248,7 +248,7 @@
             display-name = "Fn";
             bindings = <
 &kp F1      &kp F2          &kp F3           &kp F4          &kp F5             &kp F6              &mmv MOVE_UP     &kp F7        &kp F8           &kp F9    &kp F10    &kp F11  &kp F12
-&none       &none           &none            &none           &none              &none               &mmv MOVE_DOWN   &none         &none            &none     &none      &none    &none
+&none       &none           &none            &none           &none              &none               &mmv MOVE_DOWN   &none         &to 2            &none     &none      &none    &none
 &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4        &mmv MOVE_LEFT   &out OUT_BLE  &kp PRINTSCREEN  &kp HOME  &kp PG_UP  &to 0    &to 4
 &none       &bt BT_CLR_ALL  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON    &mmv MOVE_RIGHT  &out OUT_USB  &rgb_ug RGB_BRD  &kp END   &kp PG_DN  &to 1    &to 2
 &kp C_MUTE  &none           &none            &kp LEFT_ALT    &kp LEFT_SHIFT     &kp LEFT_META       &mkp LCLK        &none         &none            &none     &none      &none
