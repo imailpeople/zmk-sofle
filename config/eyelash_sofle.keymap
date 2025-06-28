@@ -170,7 +170,7 @@
         Sticky_Num: wcpn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(PERIOD) &sl 3>;
+            bindings = <&kp LC(PERIOD) &sl 4>;
             label = "WCPN";
             wait-ms = <100>;
         };
@@ -181,11 +181,11 @@
 
         layer_0 {
             bindings = <
-&mo_Grave_F1 5 0  &kp N1      &kp N2     &kp N3               &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp BACKSPACE
+&mo_Grave_F1 6 0  &kp N1      &kp N2     &kp N3               &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp BACKSPACE
 &kp TAB           &kp Q       &kp W      &kp F                &kp P                   &kp G                 &kp DOWN_ARROW   &kp J              &kp L      &kp U      &kp Y              &kp SEMI    &kp DELETE
 &kp LSHIFT        &kp A       &kp R      &kp S                &kp T                   &kp D                 &kp LEFT_ARROW   &kp H              &kp N      &kp E      &kp I              &kp O       &kp SQT
 &kp LCTRL         &kp Z       &kp X      &kp C                &kp V                   &kp B                 &kp RIGHT_ARROW  &kp K              &kp M      &kp COMMA  &kp DOT            &kp FSLH    &kp BSLH
-&kp C_MUTE        &kp ESCAPE  &kp SPACE  &Sh_ShDel_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 3 0  &kp SPACE  &lt 5 F14  &lt 4 PRINTSCREEN  &kp DELETE
+&kp C_MUTE        &kp ESCAPE  &kp SPACE  &Sh_ShDel_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 4 0  &kp SPACE  &lt 6 F14  &lt 5 PRINTSCREEN  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -195,43 +195,56 @@
         layer_1 {
             display-name = "QWERTY";
             bindings = <
-&mo_Grave_F1 5 0  &kp N1      &kp N2     &kp N3               &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp BACKSPACE
+&mo_Grave_F1 6 0  &kp N1      &kp N2     &kp N3               &kp N4                  &kp N5                &kp UP_ARROW     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0      &kp BACKSPACE
 &kp TAB           &kp Q       &kp W      &kp E                &kp R                   &kp T                 &kp DOWN_ARROW   &kp Y              &kp U      &kp I      &kp O              &kp P       &kp DELETE
 &kp LSHIFT        &kp A       &kp S      &kp D                &kp F                   &kp G                 &kp LEFT         &kp H              &kp J      &kp K      &kp L              &kp SEMI    &kp SQT
 &kp LCTRL         &kp Z       &kp X      &kp C                &kp V                   &kp B                 &kp RIGHT_ARROW  &kp N              &kp M      &kp COMMA  &kp DOT            &kp FSLH    &kp BSLH
-&kp C_MUTE        &kp ESCAPE  &kp SPACE  &Sh_ShDel_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 3 0  &kp SPACE  &lt 5 F14  &lt 4 PRINTSCREEN  &kp DELETE
+&kp C_MUTE        &kp ESCAPE  &kp SPACE  &Sh_ShDel_Else_LAlt  &kp_Esc_CWord LSHIFT 0  &mt LGUI BACKSLASH    &kp ENTER        &mo_Ent_NWord 4 0  &kp SPACE  &lt 6 F14  &lt 5 PRINTSCREEN  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_2 {
-            display-name = "Game";
+            display-name = "Col-Game";
             bindings = <
-&mo_Grave_F1 5 0  &kp N1   &kp N2    &kp N3     &kp N4   &kp N5      &mmv MOVE_UP    &kp N6             &kp N7     &kp N8     &kp N9           &kp N0     &kp BSPC
-&kp TAB           &kp Q    &kp W     &kp F      &kp P    &kp G       &mmv MOVE_DOWN  &kp J              &kp L      &kp U      &kp Y            &kp SEMI   &kp DEL
-&kp LCTRL         &kp A    &kp R     &kp S      &kp T    &kp D       &mmv MOVE_LEFT  &kp H              &kp N      &kp E      &kp I            &kp O      &kp SQT
-&kp LSHFT         &kp Z    &kp X     &kp C      &kp V    &kp B       &kp K           &kp K              &kp M      &kp COMMA  &kp DOT          &kp FSLH   &kp BSLH
-&kp C_MUTE        &kp ESC  &kp LALT  &kp SPACE  &kp RET  &kp LGUI    &mkp LCLK       &mo_Ent_NWord 3 0  &kp SPACE  &mo 4      &kp PRINTSCREEN  &kp GRAVE
+&mo_Grave_F1 6 0  &kp N1   &kp N2    &kp N3     &kp N4   &kp N5      &kp UP     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0     &kp BSPC
+&kp TAB           &kp Q    &kp W     &kp F      &kp P    &kp G       &kp DOWN   &kp J              &kp L      &kp U      &kp Y              &kp SEMI   &kp DEL
+&kp LCTRL         &kp A    &kp R     &kp S      &kp T    &kp D       &kp LEFT   &kp H              &kp N      &kp E      &kp I              &kp O      &kp SQT
+&kp LSHFT         &kp Z    &kp X     &kp C      &kp V    &kp B       &kp RIGHT  &kp K              &kp M      &kp COMMA  &kp DOT            &kp FSLH   &kp BSLH
+&kp C_MUTE        &kp ESC  &kp LALT  &kp SPACE  &kp RET  &kp LGUI    &kp RET    &mo_Ent_NWord 4 0  &kp SPACE  &mo 5      &lt 6 PRINTSCREEN  &kp GRAVE
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_3 {
+            display-name = "QWE-Game";
+            bindings = <
+&mo_Grave_F1 6 0  &kp N1   &kp N2    &kp N3     &kp N4   &kp N5      &kp UP     &kp N6             &kp N7     &kp N8     &kp N9             &kp N0     &kp BSPC
+&kp TAB           &kp Q    &kp W     &kp E      &kp R    &kp T       &kp DOWN   &kp Y              &kp U      &kp I      &kp O              &kp P      &kp DEL
+&kp LCTRL         &kp A    &kp S     &kp D      &kp F    &kp G       &kp LEFT   &kp H              &kp J      &kp K      &kp L              &kp SEMI   &kp SQT
+&kp LSHFT         &kp Z    &kp X     &kp C      &kp V    &kp B       &kp RIGHT  &kp N              &kp M      &kp COMMA  &kp DOT            &kp FSLH   &kp BSLH
+&kp C_MUTE        &kp ESC  &kp LALT  &kp SPACE  &kp RET  &kp LGUI    &kp RET    &mo_Ent_NWord 4 0  &kp SPACE  &mo 5      &lt 6 PRINTSCREEN  &kp GRAVE
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        layer_4 {
             display-name = "NumSym";
             bindings = <
 &kp GRAVE       &kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5               &mmv MOVE_UP     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0       &kp BACKSPACE
-&mo_Tab_F1 5 0  &kp LS(NUMBER_1)  &kp LS(MINUS)  &kp LS(EQUAL)         &kp EQUAL              &mkp MB4                   &mmv MOVE_DOWN   &none         &none         &none         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp DELETE
+&mo_Tab_F1 6 0  &kp LS(NUMBER_1)  &kp LS(MINUS)  &kp LS(EQUAL)         &kp EQUAL              &mkp MB4                   &mmv MOVE_DOWN   &none         &none         &none         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp DELETE
 &kp LEFT_SHIFT  &kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5               &mmv MOVE_LEFT   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0       &kp SQT
 &kp LCTRL       &kp GRAVE         &none          &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSPACE)          &mmv MOVE_RIGHT  &kp DELETE    &kp MINUS     &kp COMMA     &kp PERIOD         &kp SLASH          &kp BACKSLASH
-&kp C_MUTE      &kp ESCAPE        &kp SPACE      &mt LEFT_ALT MINUS    &mt LEFT_SHIFT ESCAPE  &mt LEFT_META BACKSLASH    &mkp LCLK        &kp ENTER     &kp SPACE     &kp F14       &lt 4 PRINTSCREEN  &kp DELETE
+&kp C_MUTE      &kp ESCAPE        &kp SPACE      &mt LEFT_ALT MINUS    &mt LEFT_SHIFT ESCAPE  &mt LEFT_META BACKSLASH    &mkp LCLK        &kp ENTER     &kp SPACE     &kp F14       &lt 5 PRINTSCREEN  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp LG(C_VOLUME_UP) LG(C_VOLUME_DOWN)>;
         };
 
-        layer_4 {
+        layer_5 {
             display-name = "Navi";
             bindings = <
 &none       &none           &none           &none         &none            &none            &mmv MOVE_UP     &none        &none           &none      &none      &none           &none
@@ -244,13 +257,13 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        layer_5 {
+        layer_6 {
             display-name = "Fn";
             bindings = <
 &kp F1      &kp F2          &kp F3           &kp F4          &kp F5             &kp F6              &mmv MOVE_UP     &kp F7        &kp F8           &kp F9    &kp F10    &kp F11  &kp F12
-&none       &none           &none            &none           &none              &none               &mmv MOVE_DOWN   &none         &to 2            &none     &none      &none    &none
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4        &mmv MOVE_LEFT   &out OUT_BLE  &kp PRINTSCREEN  &kp HOME  &kp PG_UP  &to 0    &to 4
-&none       &bt BT_CLR_ALL  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON    &mmv MOVE_RIGHT  &out OUT_USB  &rgb_ug RGB_BRD  &kp END   &kp PG_DN  &to 1    &to 2
+&none       &none           &none            &none           &none              &none               &mmv MOVE_DOWN   &none         &to 2            &to 3     &none      &none    &none
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4        &mmv MOVE_LEFT   &out OUT_BLE  &kp PRINTSCREEN  &kp HOME  &kp PG_UP  &to 0    &to 5
+&none       &bt BT_CLR_ALL  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON    &mmv MOVE_RIGHT  &out OUT_USB  &rgb_ug RGB_BRD  &kp END   &kp PG_DN  &to 1    &none
 &kp C_MUTE  &none           &none            &kp LEFT_ALT    &kp LEFT_SHIFT     &kp LEFT_META       &mkp LCLK        &none         &none            &none     &none      &none
             >;
 
