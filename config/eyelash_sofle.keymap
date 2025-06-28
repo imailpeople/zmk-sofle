@@ -90,7 +90,7 @@
         label = "ENT_NWORD";
         #binding-cells = <0>;
         tapping-term-ms = <225>;
-        bindings = <&kp ENTER>, <&num_word 3>;
+        bindings = <&kp ENTER>, <&num_word 4>;
     };
 
     kp_Esc_CWord: kp_Esc_CWord {
@@ -159,7 +159,7 @@
         compatible = "zmk,combos";
 
         Combo_Ctrl_Period {
-            bindings = <&Sticky_Num>;
+            bindings = <&Sticky_>;
             key-positions = <39 49>;
             timeout-ms = <200>;
             layers = <0 1>;
