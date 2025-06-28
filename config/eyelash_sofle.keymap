@@ -155,26 +155,7 @@
         bindings = <&kp GRAVE>, <&kp F1>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        Combo_Ctrl_Period {
-            bindings = <&Sticky_>;
-            key-positions = <39 49>;
-            timeout-ms = <200>;
-            layers = <0 1>;
-        };
-    };
-
-    macros {
-        Sticky_Num: wcpn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(PERIOD) &sl 4>;
-            label = "WCPN";
-            wait-ms = <100>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
