@@ -57,10 +57,10 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: 'Sft+$$mdi:backspace-reverse-outline$$'}
-  - {t: '&Esc_CWord', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: \, h: LGUI, s: '|'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '&Ent_NWord', h: NumSym}
+  - {t: '$$mdi:keyboard-return$$', h: NumSym}
   - $$mdi:keyboard-space$$
   - {t: F14, h: Fn}
   - {t: PRINTSCREEN, h: Navi}
@@ -122,10 +122,10 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: 'Sft+$$mdi:backspace-reverse-outline$$'}
-  - {t: '&Esc_CWord', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: \, h: LGUI, s: '|'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '&Ent_NWord', h: NumSym}
+  - {t: '$$mdi:keyboard-return$$', h: NumSym}
   - $$mdi:keyboard-space$$
   - {t: F14, h: Fn}
   - {t: PRINTSCREEN, h: Navi}
